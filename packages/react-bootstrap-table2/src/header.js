@@ -48,7 +48,7 @@ const Header = (props) => {
       return (
         <HeaderCell
           index={ i }
-          key={ column.dataField }
+          key={ column.key ? column.key : column.dataField }
           column={ column }
           onSort={ onSort }
           sorting={ currSort }
